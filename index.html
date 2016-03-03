@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GALLERY</title>
+	<script type="text/javascript" src="js/jquery-2.2.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+</head>
+<body>
+<div id="main" class="main">
+	<img class="preview" src="images/album/1.jpg"/>
+	<div class="overlay"></div>
+	<h1>The dream team website</h1>
+
+	<ul class="navWrap">
+		<li class="album">
+			<span class="albumLink">Newest Collection</span>
+			<div class="thumbsWrap">
+				<div class="thumbs">
+					<img src="images/album/1.jpg">
+					<img src="images/album/2.jpg">
+
+					<img src="images/album/3.jpg">
+
+					<img src="images/album/4.jpg">
+
+					<img src="images/album/1.jpg">
+
+					<img src="images/album/2.jpg">
+					<img src="images/album/1.jpg">
+					<img src="images/album/2.jpg">
+
+					<img src="images/album/3.jpg">
+
+					<img src="images/album/4.jpg">
+
+					<img src="images/album/1.jpg">
+
+					<img src="images/album/2.jpg">
+					<img src="images/album/1.jpg">
+					<img src="images/album/2.jpg">
+
+					<img src="images/album/3.jpg">
+
+					<img src="images/album/4.jpg">
+
+					<img src="images/album/1.jpg">
+
+					<img src="images/album/2.jpg">
+
+				</div>
+			</div>
+		</li>
+		<li class="album">
+			<span class="albumLink">Random Photography</span>
+			<div class="thumbsWrap">
+				<div class="thumbs">
+					<img src="images/album/1.jpg">
+					<img src="images/album/2.jpg">
+
+					<img src="images/album/3.jpg">
+
+					<img src="images/album/4.jpg">
+
+					<img src="images/album/1.jpg">
+
+					<img src="images/album/2.jpg">
+					<img src="images/album/1.jpg">
+					<img src="images/album/2.jpg">
+
+					<img src="images/album/3.jpg">
+
+				
+					<img src="images/album/2.jpg">
+
+					<img src="images/album/3.jpg">
+
+					<img src="images/album/4.jpg">
+
+					<img src="images/album/1.jpg">
+
+					<img src="images/album/2.jpg">
+
+				</div>
+			</div>
+		</li>
+		<li class="album">
+			<span class="albumLink">Best Shots</span>
+			<div class="thumbsWrap">
+				<div class="thumbs">
+					<img src="images/album/1.jpg">
+					<img src="images/album/2.jpg">
+
+					<img src="images/album/3.jpg">
+
+					<img src="images/album/4.jpg">
+
+					<img src="images/album/1.jpg">
+
+					<img src="images/album/2.jpg">
+					<img src="images/album/1.jpg">
+					<img src="images/album/2.jpg">
+
+					<img src="images/album/3.jpg">
+
+					<img src="images/album/4.jpg">
+
+					<img src="images/album/1.jpg">
+
+					<img src="images/album/2.jpg">
+					<img src="images/album/1.jpg">
+					<img src="images/album/2.jpg">
+
+					<img src="images/album/3.jpg">
+
+					<img src="images/album/4.jpg">
+
+					<img src="images/album/1.jpg">
+				</div>
+			</div>
+		</li>
+		<li class="album">
+			<span class="albumLink">Award Winning Collection</span>
+			<div class="thumbsWrap">
+				<div class="thumbs">
+					<img src="images/album/1.jpg">
+					<img src="images/album/2.jpg">
+
+					<img src="images/album/3.jpg">
+
+					<img src="images/album/4.jpg">
+
+					<img src="images/album/1.jpg">
+
+					<img src="images/album/2.jpg">
+					<img src="images/album/1.jpg">
+					<img src="images/album/2.jpg">
+
+					<img src="images/album/3.jpg">
+
+					<img src="images/album/4.jpg">
+
+					<img src="images/album/1.jpg">
+
+					<img src="images/album/2.jpg">
+					<img src="images/album/1.jpg">
+					<img src="images/album/2.jpg">
+
+					<img src="images/album/3.jpg">
+
+					<img src="images/album/4.jpg">
+
+					<img src="images/album/1.jpg">
+				</div>
+			</div>
+		</li>
+		<li class="album">
+			<span class="albumLink">About</span>
+			<div class="thumbsWrap">
+				<div class="thumbs">
+					<img src="images/album/1.jpg">
+					<img src="images/album/2.jpg">
+
+					<img src="images/album/3.jpg">
+
+					<img src="images/album/4.jpg">
+
+					<img src="images/album/1.jpg">
+
+					<img src="images/album/2.jpg">
+					<img src="images/album/1.jpg">
+					<img src="images/album/2.jpg">
+
+					<img src="images/album/3.jpg">
+
+					<img src="images/album/4.jpg">
+
+					<img src="images/album/1.jpg">
+
+					<img src="images/album/2.jpg">
+					<img src="images/album/1.jpg">
+					<img src="images/album/2.jpg">
+
+					<img src="images/album/3.jpg">
+
+					<img src="images/album/4.jpg">
+
+					<img src="images/album/1.jpg">
+
+				</div>
+			</div>
+		</li>
+	</ul>
+	
+
+</div>
+
+</body>
+</html>
+<script type="text/javascript">
+	$(document).ready(function () {
+
+		var wrapWidth = $('.thumbsWrap').innerWidth();
+		var thumbsWrap = $('.thumbs').css('width');
+		var imgCount = $('.thumbs:eq(1) img').length;
+		$(".albumLink").click(function(){
+			$('.album .thumbsWrap').hide('slow');
+			$(this).next().show('slow');
+			
+		
+			var sum = 0;
+			$(".thumbs:eq(1) img").each(function() {
+    		sum += $(this).width() + parseInt($(this).css('paddingLeft')) + parseInt($(this).css('paddingRight'))
+			});
+			$(".thumbs").css('width', sum);
+
+			$(".thumbsWrap").mousemove(function(e) {
+   			 x = -(((e.pageX - $('.thumbs').position().left) / $(".thumbsWrap").width()) * ($(".thumbs").width() + parseInt($(".thumbs").css('paddingLeft')) + parseInt($(".thumbs").css('paddingRight')) - $(".thumbsWrap").width()));
+
+   			 $(".thumbs").css({
+      		  'marginLeft': x + 'px'
+    		});
+			});
+		});
+
+		$(".thumbs img").click(function(){
+			
+			$('.preview').attr('src',$(this).attr('src'));
+
+		});
+
+		
+		 
+	});
+</script>

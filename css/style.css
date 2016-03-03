@@ -1,0 +1,80 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+html,body{
+	width:100%;
+	height:100%;
+	overflow: hidden;
+	font-family:Helvetica, sans-serif;
+	font-size:16px;
+	color:#fff;
+}
+
+.main .preview{
+	width:100%;
+	position: absolute;
+	top:0;
+	left:0; 
+}
+
+.overlay{
+	width:100%;
+	height:100%;
+	background: transparent url(../images/pattern.png) repeat-x bottom left;
+	position:fixed;
+	top:0;
+	left:0;
+	opacity:0.3;
+}
+
+h1{
+	position:absolute;
+	font-size: 40px;
+	margin: 20px;
+	color:#fff;
+	z-index: 1;
+}
+.album{
+	width:100%;
+	margin-bottom:10px; 
+}
+.navWrap{
+	position: absolute;
+	top: 200px;
+	width:100%;
+}
+.navWrap li{
+	margin-bottom: 25px;
+}
+.navWrap li img{
+	opacity:0.7;
+	transition:all 0.5s ease;
+	width:180px;
+}
+.navWrap li img:hover{
+	opacity:1;
+}
+.albumLink{
+	// display:block;
+	min-width: 150px;
+	padding: 10px 25px;
+	background: black;
+	color: white;
+	font-size: 26px;
+	margin-left:0; 
+}
+.thumbsWrap{
+	display:none;
+	margin-top: 15px;
+	width: 100%;
+	height: auto;
+	overflow-x: hidden;
+	white-space: nowrap;
+}
+
+.thumbs{
+	overflow-x: hidden;
+}
+
